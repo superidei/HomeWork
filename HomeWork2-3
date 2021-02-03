@@ -1,0 +1,16 @@
+package com.sss;
+import java.util.Scanner;
+public class DlinaOkruznosti {
+	
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Введите раддиус: ");
+		double radius = sc.nextDouble();
+		double dlina = Math.PI*2*radius; 
+		System.out.println("Длина окружности: "+ dlina);
+		
+
+	}
+
+}
