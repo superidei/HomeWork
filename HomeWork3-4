@@ -1,0 +1,34 @@
+package com.gmail.superidei;
+import java.util.Scanner;
+
+public class treugolnik {
+	
+	
+
+	public static void main(String[] args) {
+		double storonaA;
+		double storonaB;
+		double storonaC;
+		double sumAB;
+		double sumBC;
+		double sumCA;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Введите первую сторону a:");
+		storonaA = sc.nextDouble();
+		System.out.println("Введите вторую сторону b:");
+		storonaB = sc.nextDouble();
+		System.out.println("Введите nретью сторону c:");
+		storonaC = sc.nextDouble();
+		sumAB = storonaA+storonaB;
+		sumBC = storonaB+storonaC;
+		sumCA = storonaC+storonaA;
+		
+		if (sumAB>storonaC && sumBC>storonaA && sumCA>storonaB) {
+			System.out.println("Такой треугольник существует");
+		}else {
+			System.out.println("Такого треугольника не существует");
+		}
+		
+	}
+
+}
