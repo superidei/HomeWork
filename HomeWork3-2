@@ -1,0 +1,36 @@
+package com.gmail.superidei;
+import java.util.Scanner;
+
+public class etazh {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int domEtazh = 9;
+		int domPodezd = 4;
+		int domKvartirEtazh = 4;
+		int domKvartirPodezd = domEtazh*domKvartirEtazh;
+		int domMaxKvartir = (domEtazh * domPodezd * domKvartirEtazh);
+		int domMaxKvartirPodezd = domMaxKvartir / domPodezd ;
+		int etazh;
+		int podezd;
+		int kvartira;
+		
+		System.out.println("Введите номер квартиры: ");
+		kvartira = sc.nextInt();
+		if (kvartira <= domMaxKvartir) {
+			podezd = (kvartira-1) / (domMaxKvartirPodezd);
+		
+			System.out.println("Подъезд номер " + (podezd+1));
+			
+			etazh = (kvartira-1) / domKvartirEtazh%domEtazh+1;
+			System.out.println("Этаж номер " + (etazh));
+					
+			
+		}else {
+			System.out.println("Такой квартиры нет в доме");	
+		}
+		
+		
+	}
+
+}
