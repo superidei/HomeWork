@@ -1,0 +1,36 @@
+package com.gmail.superidei;
+import java.util.Scanner;
+
+public class maxNum {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		double numOne;
+		double numTwo;
+		double numThree;
+		double numFour;
+		double numMax;
+		
+		System.out.println("Введите цифру с клавиатуры:");
+		numOne = sc.nextDouble();
+		
+		System.out.println("Введите цифру с клавиатуры:");
+		numTwo = sc.nextDouble();
+		
+		System.out.println("Введите цифру с клавиатуры:");
+		numThree = sc.nextDouble();
+		
+		System.out.println("Введите цифру с клавиатуры:");
+		numFour = sc.nextDouble();
+		
+		numMax = numOne;
+		if (numTwo > numMax) {
+			numMax = numTwo;
+		}
+		if (numThree > numMax) {
+			numMax = numThree;
+		}
+		if (numFour > numMax) {
+			numMax = numFour;
+		}
+		System.out.println("Cамое большое число " + numMax);
