@@ -1,0 +1,27 @@
+package com.gmail.superidei;
+import java.util.Scanner;
+
+public class luckyTicket {
+
+	
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int numTicket;
+		int sumLeft;
+		int sumRight;
+		System.out.println("Введите четырёхзначное число вашего билетика:");
+		numTicket = sc.nextInt();
+		sumLeft = (numTicket / 1000)+((numTicket/100) % 10);
+	
+		sumRight = ((numTicket/10) % 10)+(numTicket % 10);
+		
+		if (sumLeft==sumRight) {
+			System.out.println("Билет Счастливый");
+		}else {
+			System.out.println("Билет Обычный");
+		}
+		
+	}
+
+}
