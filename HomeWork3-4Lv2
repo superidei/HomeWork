@@ -1,0 +1,40 @@
+package com.gmail.superidei;
+import java.util.Scanner;
+
+public class palindrom {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		int palindrom;
+		int x1;
+		int x2;
+		int x3;
+		int x4;
+		int x5;
+		int x6;
+		
+		System.out.println("Введите шестизначное число: ");
+		palindrom = sc.nextInt();
+		x1 = palindrom /100000 ;
+		x2 = (palindrom /10000)%10 ;
+		x3 = (palindrom /1000)%10 ;
+		x4 = (palindrom /100)%10 ;
+		x5 = (palindrom /10)%10 ;
+		x6 = palindrom %10 ;
+		System.out.println(x1);
+		System.out.println(x2);
+		System.out.println(x3);
+		System.out.println(x4);
+		System.out.println(x5);
+		System.out.println(x6);
+		if (x1 == x6 && x2 == x5 && x3 == x4) {
+			System.out.println("Число "+palindrom+ " является полиндромом");
+		}else {
+			System.out.println("Число "+palindrom+ " неявляется полиндромом");
+			
+		}
+		
+
+	}
+
+}
