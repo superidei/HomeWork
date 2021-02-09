@@ -1,0 +1,29 @@
+package com.gmail.superidei;
+import java.util.Scanner;
+public class krug {
+
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		double x;
+		double y;
+		double r;
+		double a;
+		double b;
+		a = 0;
+		b = 0;
+		r = 4;
+		System.out.println("Введите координаты точки  х: ");
+		x = sc.nextDouble();
+		System.out.println("Введите координаты точки  y: ");
+		y = sc.nextDouble();
+		if ((a - x)*(a - x) + (b - y)*(b - y) <= r*r) {
+			System.out.println("Эта точка лежит внутри круга");
+		}else {
+			System.out.println("Эта точка не лежит внутри круга");
+		}
+		
+
+	}
+
+}
