@@ -1,0 +1,29 @@
+package superidei.com.gmail.com;
+import java.util.Scanner;
+public class faktorial {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int f;
+		System.out.println("Введите  число в диапазоне от 5 до 15 :");
+		f = sc.nextInt();
+		if(f<5 || f>15) {
+			System.out.println("Вы ввели не коректное число программа не выполниться");
+	
+			
+		}else {
+		
+		int result = 1;
+		
+		for (int i = 1; i<= f ; i++) {
+			result = result*i;
+			
+		}
+		System.out.println( f + "!"+ "= "+result);
+		
+		}	
+		
+	}
+		
+
+}
