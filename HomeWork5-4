@@ -1,0 +1,21 @@
+package superidei.com.gmail.com;
+import java.util.Arrays;
+import java.util.Scanner;
+public class masivPoiskSymbol {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println(" Введите текст: ");
+		String text= sc.nextLine();
+		
+		char[] symbol = text.toCharArray();	
+		int kolvoSymbol = 0;
+		for (int i=0; i<symbol.length; i++) {
+			if (symbol[i]=='b') {
+				kolvoSymbol=kolvoSymbol+1;
+
+	}
+			
+		}System.out.println("Колличество символов b = " + kolvoSymbol);
+	}
+}
